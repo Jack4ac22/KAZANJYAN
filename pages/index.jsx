@@ -6,15 +6,19 @@ export default function Home() {
   return (
     <>
       <div className="main">
-        <h1>My name is Jack</h1>
-        <p>
+        <h3>Hi</h3>
+        <h2>I am</h2>
+        <h1>Jack Kazanjyan</h1>
+        <h4>
           I am a reformed Christian, presuppositionalist, young earth
           creationist, and a junior web developer.
-        </p>
-        <p>This page is still under construction.</p>
-        <p>
-          for more information, please contact me via kazanjyan.jack@gmail.com.
-        </p>
+        </h4>
+        <h4>This page is still under construction.</h4>
+        <h4>
+          for more information, please contact me via{" "}
+          <a href="mailto:kazanjyan.jack@gmail.com">kazanjyan.jack@gmail.com</a>
+          .
+        </h4>
       </div>
       <style>{`
       .main{
@@ -23,13 +27,10 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 align-content: center
+background-color: black;
+text-align
       }
-  p{
-    backgroundcolor: black;
-    color: white;
-    text-align
 
-  }
   `}</style>
     </>
   );
