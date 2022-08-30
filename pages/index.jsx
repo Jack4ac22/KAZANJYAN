@@ -5,33 +5,48 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <>
-      <div className="main">
-        <h3>Hi</h3>
-        <h2>I am</h2>
-        <h1>Jack Kazanjyan</h1>
-        <h4>
+      <div className="main ">
+        <h3 className="scale-up-ver-center">Hello, my name is</h3>
+        <h1 className="scale-up-ver-center">Jack Kazanjyan</h1>
+        <p className="scale-up-ver-center">
           I am a reformed Christian, presuppositionalist, young earth
           creationist, and a junior web developer.
-        </h4>
-        <h4>This page is still under construction.</h4>
-        <h4>
+        </p>
+        <p className="scale-up-ver-center">
+          This page is still under construction.
+        </p>
+        <h4 className="scale-up-ver-center">
           for more information, please contact me via{" "}
-          <a href="mailto:kazanjyan.jack@gmail.com">kazanjyan.jack@gmail.com</a>
+          <a
+            href="mailto:kazanjyan.jack@gmail.com"
+            className="scale-up-ver-center"
+          >
+            kazanjyan.jack@gmail.com
+          </a>
           .
         </h4>
       </div>
-      <style>{`
-      .main{
-        display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-align-content: center
-background-color: black;
-text-align
-      }
+      <style jsx>{`
+        .main {
+          align-content: center;
+          align-items: center;
+          background-color: #444;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          justify-content: center;
+          padding: 50px;
+        }
 
-  `}</style>
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+          text-align: center;
+        }
+      `}</style>
     </>
   );
 }
