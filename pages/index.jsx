@@ -27,23 +27,25 @@ export default function Home() {
         </h4>
       </div>
       <style jsx>{`
-      .main{
-        align-content: center;
-        align-items: center;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align; 
-      }
-        body{
-          
-          background-color: black;
-      }
-     h1, h2, h3, h4, p{
-      text-align: center
-     }
+        .main {
+          align-content: center;
+          align-items: center;
+          background-color: #444;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          justify-content: center;
+          padding: 50px;
+        }
 
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+          text-align: center;
+        }
       `}</style>
     </>
   );
